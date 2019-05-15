@@ -28,7 +28,8 @@ class Song
     @@genres.uniq 
   end 
   
-  def genre_count 
+  def genre_count
+    binding.pry 
     genres.each do |genre| 
       genres.count(genre)
     end 
