@@ -34,7 +34,7 @@ class Song
     g_check.each do |genre|
       num = @@genres.count(genre)
       binding.pry 
-      g_hash[:]
+      g_hash[genre] = num
     end 
 
   end 
