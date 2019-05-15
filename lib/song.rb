@@ -32,8 +32,7 @@ class Song
     g_hash = {}
     g_check = @@genres.uniq
     g_check.each do |genre|
-      num = @@genres.count(genre)
-      g_hash[genre] = num
+      g_hash[genre] = @@genres.count(genre)
     end 
     g_hash
   end 
