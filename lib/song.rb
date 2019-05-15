@@ -29,10 +29,12 @@ class Song
   end 
   
   def self.genre_count
-    check = @@genres.uniq
-    check.each do |genre|
+    g_hash = {}
+    g_check = @@genres.uniq
+    g_check.each do |genre|
       num = @@genres.count(genre)
       binding.pry 
+      g_hash[:]
     end 
 
   end 
