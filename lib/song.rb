@@ -29,13 +29,11 @@ class Song
   end 
   
   def self.genre_count
-    @@genres.count 
-    @@genres.each do |genre|
-      binding.pry   
+    check = @@genres.uniq
+    check.each do |genre|
+      num = @@genres.count(genre)
     end 
-    # genres.each do |genre| 
-    #   genres.count(genre)
-    # end 
+
   end 
   
   def self.artist_count 
