@@ -33,8 +33,9 @@ class Song
     g_check = @@genres.uniq
     g_check.each do |genre|
       num = @@genres.count(genre)
-      binding.pry 
+      
       g_hash[genre] = num
+      binding.pry 
     end 
 
   end 
