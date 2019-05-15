@@ -44,6 +44,6 @@ class Song
     a_check.each do |artist|
       a_hash[artist] = @@artists.count(artist)
     end 
-    #a_hash
+    a_hash
   end 
 end 
