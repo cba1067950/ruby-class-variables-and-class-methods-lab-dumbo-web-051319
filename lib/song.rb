@@ -22,11 +22,11 @@ class Song
   end 
   
   def self.artists
-    @@artists
+    @@artists.uniq 
     binding.pry 
   end 
   
   def self.genres 
-    @@genres 
+    @@genres.uniq 
   end 
 end 
