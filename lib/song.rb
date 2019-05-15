@@ -43,7 +43,7 @@ class Song
     a_check = @@artists.uniq
     a_check.each do |artist|
       num = @@artists.count(artist)
-      a_hash[genre] = num
+      a_hash[artist] = num
     end 
     a_hash
   end 
