@@ -32,6 +32,7 @@ class Song
     check = @@genres.uniq
     check.each do |genre|
       num = @@genres.count(genre)
+      binding.pry 
     end 
 
   end 
