@@ -33,14 +33,18 @@ class Song
     g_check = @@genres.uniq
     g_check.each do |genre|
       num = @@genres.count(genre)
-      
       g_hash[genre] = num
-
     end 
     g_hash
   end 
   
   def self.artist_count 
-    
+    a_hash = {}
+    a_check = @@artists.uniq
+    a_check.each do |artist|
+      num = @@artists.count(artist)
+      a_hash[genre] = num
+    end 
+    a_hash
   end 
 end 
